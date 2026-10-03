@@ -1,10 +1,11 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبة الأزهري | كل خدماتك في مكان واحد</title><link rel="stylesheet" href="style.css?v=8888">
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبة الأزهري | كل خدماتك في مكان واحد</title><link rel="stylesheet" href="style.css?v=7777">
 <style>
-    /* تنسيق صارم وثابت للأزرار العائمة لمنع أي تداخل أو اختفاء */
+    /* تنسيق صارم وقاطع لحماية الأزرار العائمة ومنع اختفائها تحت أي ظرف */
     .chat-buttons { position: fixed !important; bottom: 20px !important; left: 20px !important; display: flex !important; flex-direction: column !important; gap: 12px !important; z-index: 99999 !important; width: 55px !important; height: auto !important; }
-    .chat-btn { width: 55px !important; height: 55px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; text-decoration: none !important; box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important; transition: transform 0.3s ease !important; overflow: hidden !important; border: none !important; background: none !important; padding: 0 !important; }
+    .chat-btn { width: 55px !important; height: 55px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; text-decoration: none !important; box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important; transition: transform 0.3s ease !important; overflow: hidden !important; border: none !important; padding: 0 !important; background: #ffffff !important; }
     .chat-btn:hover { transform: scale(1.1) !important; }
-    .chat-btn svg { width: 100% !important; height: 100% !important; display: block !important; }
+    .chat-btn img { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+    
     .print-section { background: #ffffff; padding: 60px 0; border-bottom: 1px solid #e2e8f0; }
     .print-box { max-width: 600px; margin: 0 auto; background: #f8fafc; border: 2px dashed #0056b3; padding: 40px 30px; border-radius: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
     .print-box h3 { font-size: 24px; color: #0f172a; margin-bottom: 10px; font-weight: 700; }
@@ -85,7 +86,7 @@ function sendPrintOrder(event) {
                
     var encodedText = encodeURIComponent(text);
     var whatsappUrl = "https://wa.me" + encodedText;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 }
 </script>
 
@@ -123,9 +124,10 @@ function sendPrintOrder(event) {
 
 <section><div class="container"><div class="offer"><div><h2>📢 تابع أحدث عروض مكتبة الأزهري</h2><p>خصومات وعروض على الكتب الخارجية والأدوات المدرسية.</p></div><a class="btn primary" href="offers.html">شاهد العروض</a></div></div></section>
 
-<section class="contact"><div class="container grid2"><div><h2>محتاج خدمة؟ تواصل معنا</h2><p>اتصل بنا أو تواصل معنا عبر واتساب للاستفسار عن الخدمات والعروض.</p></div><div class="contactbox"><div class="row">📞 الهاتف: <strong><a href="tel:01032361829" style="color:inherit; text-decoration:none;">01032361829</a></strong></div><div class="row">📍 العنوان: <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="map-link">6 شارع عثمان بن عفان، بجوار جامع شحاتة، مدينة الأمل، مدينة نصر (اضغط لفتح الخريطة 🗺️)</a></div></div></div></section>
+<section class="contact"><div class="container grid2"><div><h2>محتاج خدمة؟ تواصل معنا</h2><p>اتصل بنا أو تواصل معنا عبر واتساب للاستفسار عن الخدمات والعروض.</p></div><div class="contactbox"><div class="row">📞 الهاتف: <strong><a href="tel:01032361829" style="color:inherit; text-decoration:none;">01032361829</a></strong></div><div class="row">📍 العنوان: <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="map-link">6 شارع عثمان بن عفان, بجوار جامع شحاتة، مدينة الأمل، مدينة نصر (اضغط لفتح الخريطة 🗺️)</a></div></div></div></section>
 </main>
 
-<!-- أزرار التواصل العائمة الثابتة بالصيغ الموثوقة المحدثة لفتح التطبيقات مباشرة بدون أي خطأ -->
+<!-- أزرار التواصل العائمة المحمية تماماً بالشعارات الرسمية المباشرة -->
 <div class="chat-buttons">
+    <!-- زر واتساب الحقيقي والشهير -->
     <a href="https://wa.me" class="chat-btn" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
