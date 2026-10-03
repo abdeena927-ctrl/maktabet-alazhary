@@ -1,5 +1,6 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبة الأزهري | كل خدماتك في مكان واحد</title><link rel="stylesheet" href="style.css?v=99999">
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبة الأزهري | كل خدماتك في مكان واحد</title><link rel="stylesheet" href="style.css?v=999999">
 <style>
+    /* تنسيق صارم وقاطع لإجبار الأزرار على الطيران أسفل اليسار بشكل عائم ومنع أي تداخل */
     .chat-buttons { position: fixed !important; bottom: 20px !important; left: 20px !important; display: flex !important; flex-direction: column !important; gap: 12px !important; z-index: 99999 !important; width: 55px !important; height: auto !important; }
     .chat-btn { width: 55px !important; height: 55px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; text-decoration: none !important; box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important; transition: transform 0.3s ease !important; overflow: hidden !important; border: none !important; background: none !important; padding: 0 !important; }
     .chat-btn:hover { transform: scale(1.1) !important; }
@@ -84,7 +85,7 @@ function sendPrintOrder(event) {
                
     var encodedText = encodeURIComponent(text);
     var whatsappUrl = "https://whatsapp.com" + encodedText;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 }
 </script>
 
@@ -97,7 +98,7 @@ function sendPrintOrder(event) {
 <section class="reviews-section">
     <div class="container">
         <div class="head">
-            <h2>⭐ ماذا يقول عملائنا؟</h2>
+            <h2>⭐ ماذا يقول عملائنا?</h2>
             <p>آراء حقيقية من الطلاب والزبائن الذين وثقوا بـ مكتبة الأزهري</p>
         </div>
         <div class="reviews-grid">
@@ -122,8 +123,9 @@ function sendPrintOrder(event) {
 
 <section><div class="container"><div class="offer"><div><h2>📢 تابع أحدث عروض مكتبة الأزهري</h2><p>خصومات وعروض على الكتب الخارجية والأدوات المدرسية.</p></div><a class="btn primary" href="offers.html">شاهد العروض</a></div></div></section>
 
-<section class="contact"><div class="container grid2"><div><h2>محتاج خدمة؟ تواصل معنا</h2><p>اتصل بنا أو تواصل معنا عبر واتساب للاستفسار عن الخدمات والعروض.</p></div><div class="contactbox"><div class="row">📞 الهاتف: <strong><a href="tel:01032361829" style="color:inherit; text-decoration:none;">01032361829</a></strong></div><div class="row">📍 العنوان: <a href="https://google.com" target="_blank" class="map-link">6 شارع عثمان بن عفان، بجوار جامع شحاتة، مدينة الأمل، مدينة نصر (اضغط لفتح الخريطة 🗺️)</a></div></div></div></section>
+<section class="contact"><div class="container grid2"><div><h2>محتاج خدمة؟ تواصل معنا</h2><p>اتصل بنا أو تواصل معنا عبر واتساب للاستفسار عن الخدمات والعروض.</p></div><div class="contactbox"><div class="row">📞 الهاتف: <strong><a href="tel:01032361829" style="color:inherit; text-decoration:none;">01032361829</a></strong></div><div class="row">📍 العنوان: <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="map-link">6 شارع عثمان بن عفان، بجوار جامع شحاتة، مدينة الأمل، مدينة نصر (اضغط لفتح الخريطة 🗺️)</a></div></div></div></section>
 </main>
 
+<!-- أزرار التواصل المحدثة بصيغ برمجية آمنة وموثوقة لفتح التطبيقات فوراً -->
 <div class="chat-buttons">
-    <a href="https://whatsapp.com" class="chat-btn" target="_blank" aria-label="واتساب">
+    <!-- رابط واتساب الرسمي المباشر لتطبيقات الهواتف -->
